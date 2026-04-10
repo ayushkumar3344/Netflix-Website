@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: "Poppins",sans-serif; */
+    font-family: "Roboto",sans-serif;
+    position: relative;
+    background: #141414;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a,button{
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s linear;
+    color: #fff;
+}
+
+/* Navigation ---> */
+
+nav{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    padding: 0 3%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .05);
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+nav .left,.right{
+    display: flex;
+    align-items: center;
+}
+
+nav .left .logo img{
+    width: 120px;
+}
+
+nav .left ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav .left ul li {
+    padding: 3px 10px;
+}
+
+nav .left ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .15px;
+    color: rgb(255, 255,255,.5);
+}
+
+nav .left ul li a:hover{
+    color: #fff;
+}
+
+nav .left ul li .a_active{
+    color: white
+}
+
+
+/* Nav Right --> */
+
+nav .right .search{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 5px 10px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    background: transparent;
+    transition: 0.3s linear;
+}
+
+nav .right .search i {
+    color: #fff;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+nav .right input{
+    /* width: 210px; */
+    width: 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+nav .right input::placeholder{
+    font-weight: 500;
+    color: rgb(255, 255,255,.5);
+}
+
+
+/* ---------------- Js Code Panding */
+nav .right .search.search_active input{
+    width: 210px;
+}
+
+nav .right .search.search_active{
+    border: 2px solid rgb(255, 255, 255);
+}
+/* Js code panding -------------------- */
+
+
+nav .right .noti{
+    margin: 0px 20px;
+    position: relative;
+
+}
+
+nav .right .noti i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+nav .right .profile{
+    margin-left: 15px;
+}
+
+nav .right .profile .profile-bx{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .right .profile .profile-bx i{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 12px;
+    transition: .3s linear;
+}
+
+nav .right .profile .profile-bx img{
+    border-radius: 5px;
+}
+
+nav .right .profile .profile-bx:hover i{
+    transform: rotate(180deg);
+}
