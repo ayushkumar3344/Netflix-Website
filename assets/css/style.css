@@ -859,4 +859,246 @@ section .section-detail .top-section .play-mute .mute h6{
     transition: .3 linear;
 }
 
+/* Top Content Styling --> */
 
+.video-details-main .video-details .top-content{
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details .top-content .left , .right{
+    width: 40%;
+}
+
+.video-details-main .video-details .top-content .left{
+    width: 50%;
+}
+
+.video-details-main .video-details .top-content .left .match{
+    display: flex;
+    align-items: center;
+}
+
+.video-details-main .video-details .top-content .left .match h1{
+    font-size: 15px;
+    color: #46d369;
+}
+
+.video-details-main .video-details .top-content .left .match h6{
+    font-size: 14px;
+    color: rgb(255, 255,255,.5);
+    margin: 0 5px;
+}
+
+.video-details-main .video-details .top-content .left .match span{
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1px 5px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.video-details-main .video-details .top-content .left .cate{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-details-main .video-details .top-content .left .cate h5{
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 1px 5px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.video-details-main .video-details .top-content .left .cate h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.video-details-main .video-details .top-content .left p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 40px;
+    letter-spacing: .5px;
+    word-break: break-all;
+    line-height: 17.5px;
+}
+
+.video-details-main .video-details .top-content .right{
+    display: unset;
+    padding-left: 3%;
+}
+
+.video-details-main .video-details .top-content .right .card{
+    margin-top: 10px;
+}
+
+.video-details-main .video-details .top-content .right .card span{
+    color: rgb(255, 255, 255,.2);
+    font-size: 14px;
+}
+
+.video-details-main .video-details .top-content .right .card a{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.video-details-main .video-details  .only-for-series{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;  
+}
+
+.video-details-main .video-details  .only-for-series .heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details  .only-for-series .heading h1{
+    color: #fff;
+    font-size: 25px;
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season{
+    position: relative;
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season button{
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 8px 45px 8px 20px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season button i{
+    margin-left: 15px;
+    position: absolute;
+    transition: .3s linear;  
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season .options{
+    border: 1px solid #fff;
+    position: absolute;
+    width: 250px;
+    right: 0;
+    top: 120%;
+    background: rgb(184, 184, 184,.1);
+    color: #fff;
+    padding: 20px;
+    display: none; 
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season .options h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.video-details-main .video-details  .only-for-series .heading .select-season .options h4:nth-last-child{
+    font-size: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.video-details-main .video-details  .only-for-series .seasions{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions h3 span:nth-child(1){
+    border: 1px solid #fff;
+    padding: 0px 5px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions h3 span:nth-child(2){
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1ps solid rgb(184, 184, 184,.1);
+    padding-bottom: 30px;
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .img{
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .img img{
+    width: 100%;
+    border: 8px;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .img i{
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-size: 20px;
+    background: rgb(255, 255, 255,.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card:hover .img i{
+    opacity: 1;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .content{
+    width: 100%;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .content .name-time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .content .name-time h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.video-details-main .video-details  .only-for-series .seasions .cards .ses-card .content p{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255,.8);
+    margin-top: 10px;
+}
