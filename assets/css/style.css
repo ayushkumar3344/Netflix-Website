@@ -661,5 +661,202 @@ section .section-detail .top-section .play-mute .mute h6{
 }
 
 
+/* top 10 movies Section Styling Start Here ----------> */
+
+
+.slide-main-box .top10 .card-box .card .img-svg{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+.slide-main-box .top10 .card-box .card .img-svg svg{
+    width: 50%;
+    height: 170px;
+}
+
+.slide-main-box .top10 .card-box .card .img-svg img{
+    width: 50% !important;
+}
+
+.slide-main-box .top10 .card-box .card:hover .img-svg{
+    overflow: hidden;
+}
+
+.slide-main-box .top10 .card-box .card:hover .img-svg svg{
+    display: none;
+}
+
+.slide-main-box .top10 .card-box .card:hover .img-svg img{
+    width: 40% !important;
+}
+
+.slide-main-box .top10 .card-box .card:hover .play-add-like-all{
+    margin-top: 30px;
+}
+
+
+/* Video Detail Section Styling Start Here -----> */
+
+.video-details-main{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* background: red; */
+    z-index: 999;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-details-main .video-details{
+    width: 60%;
+    height: 97%;
+    background: #181818;
+    border-radius: 10px;
+    margin-top: 3%;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+.video-details-main .video-details::-webkit-scrollbar{
+    display: none;
+}
+
+.video-details-main .video-details .video-img{
+    width: 100%;
+    position: relative;
+    height: 60%;
+    overflow: hidden;
+}
+
+.video-details-main .video-details .video-img::before{
+    content: '';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg,transparent,#181818);
+}
+
+.video-details-main .video-details .video-img video{
+    width: 100%;  
+}
+
+.video-details-main .video-details .video-img img{
+    width: 100%;
+}
+
+.video-details-main .video-details .video-img .bi-x{
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 35px;
+    background: #181818;
+    border-radius: 50%;
+    padding: 0px 4px;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 20px rgb(0,0,0,.5));
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .video-img .logo-control{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    padding: 0px 4%;
+}
+
+.video-details-main .video-details .video-img .logo-control img{
+    width: 230px;
+    margin-bottom: 40px;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play{
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    position: relative;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+    margin-right: 5px;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play button i{
+    font-size: 28px !important;
+    margin-right: 5px;
+    margin-top: 2px;
+    color: #000;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play i{
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255,.5);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px 8px;
+    margin: 0px 5px;
+    background: rgb(184, 184, 184,.5);
+    position: relative;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play i:nth-child(2){
+    font-size: 32px !important;
+    padding: 2px 5px;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play i:nth-child(3){
+    font-size: 20px !important;
+    padding: 9px 11px;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .play i:nth-child(1){
+    font-size: 20px !important;
+    padding: 9px 11px;
+    border-radius: unset !important;
+    padding: unset !important;
+    border: unset !important;
+    background: unset !important;
+    margin: unset !important;
+}
+
+.video-details-main .video-details .video-img .logo-control .controle .bi-volume-up-fill{
+    cursor: pointer;
+    font-size: 23px;
+    border: 2px solid rgb(255, 255,255,.5);
+    border-radius: 50%;
+    color: #fff;
+    padding: 7px 10px;
+    margin: 0px 5px;
+    background: rgb(184, 184, 184,.5);
+    transition: .3 linear;
+}
 
 
