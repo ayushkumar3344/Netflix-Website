@@ -1226,3 +1226,51 @@ section .section-detail .top-section .play-mute .mute h6{
     padding-bottom: 15px;
     word-break: break-all;
 }
+
+/* ----------> */
+
+.video-details-main .video-details .about{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.video-details-main .video-details .about h1{
+    color: #fff;
+    font-size: 22px;
+}
+
+.video-details-main .video-details .about li{
+    list-style: none;
+    margin-top: 10px;
+    color: rgb(255, 255,255,.6);
+    font-size: 14px;
+}
+
+.video-details-main .video-details .about li span{
+    margin-right: 18px;
+}
+
+.video-details-main .video-details .about li a{
+    text-decoration: 1px solid underline;
+    margin-right: 5px;
+}
+
+.video-details-main .video-details .about li:nth-last-child(1){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-details-main .video-details .about li:nth-last-child(1) .cate{
+    color: #fff;
+    border: border 1px solid rgb(255, 255,255);
+    padding: 1px 5px;
+    margin-right: 5px;
+}
+
+.video-details-main .video-details .about li:nth-last-child(1) h6{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
