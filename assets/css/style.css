@@ -713,7 +713,7 @@ section .section-detail .top-section .play-mute .mute h6{
 }
 
 .video-details-main .video-details{
-    width: 60%;
+    width: 55%;
     height: 97%;
     background: #181818;
     border-radius: 10px;
@@ -1101,4 +1101,128 @@ section .section-detail .top-section .play-mute .mute h6{
     line-height: 20px;
     color: rgb(255, 255, 255,.8);
     margin-top: 10px;
+}
+
+/* -------------> */
+
+.video-details-main .video-details .more-like-this{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.video-details-main .video-details .more-like-this h1{
+    color: #fff;
+    font-size: 18px;
+}
+
+.video-details-main .video-details .more-like-this .cards{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video-details-main .video-details .more-like-this .cards .card{
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(184, 184, 184,.1);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .img-time{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .img-time img{
+    width: 100%;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .img-time i{
+    position: absolute;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-size: 20px;
+    background: rgb(184, 184, 184,.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .more-like-this .cards .card:hover .img-time i{
+    opacity: 1;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .img-time h6{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* ----> */
+
+.video-details-main .video-details .more-like-this .cards .card .content{
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add h5{
+    color: #46d369;
+    font-size: 16px;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add .cate-year{
+    display: flex;
+    align-items: center;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add .cate-year h6{
+    color: rgb(255, 255,255,.7);
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add .cate-year h6:nth-child(1){
+    border: 1px solid rgb(255, 255,255,.7);
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+
+.video-details-main .video-details .more-like-this .cards .card .content .match-add .add i{
+    cursor: pointer;
+    font-size: 20px !important;
+    border: 2px solid rgb(255, 255,255,.5);
+    border-radius: 50%;
+    padding: 3px 5px;
+    margin: 0px 5px;
+    color: #fff;
+    background: rgb(184, 184, 184,.5);
+}
+
+.video-details-main .video-details .more-like-this .cards .card p{
+    font-size: 12px;
+    padding: 0px 15px;
+    color: #fff;
+    padding-bottom: 15px;
+    word-break: break-all;
 }
