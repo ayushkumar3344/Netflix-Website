@@ -1274,3 +1274,456 @@ section .section-detail .top-section .play-mute .mute h6{
     font-size: 13px;
     font-weight: 600;
 }
+
+
+
+/* --------------> */
+
+.video-details-main .video-details .video-player{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.video-details-main .video-details .video-player video{
+    width: 100%;
+}
+
+.video-details-main .video-details .video-player .back-to-home{
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    position: absolute;
+    top: 15px;
+    left: 2.5%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 30px;
+}
+
+.video-details-main .video-details .video-player:hover .back-to-home{
+    display: flex;
+}
+
+.video-details-main .video-details .video-player .back-to-home i{
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- IMPORTANT */
+
+.video-details-main .video-details .video-player .controle{
+    width: 95%;
+    height: 70px;
+    position: absolute;
+    bottom: 15px;
+    left: 2.5%;
+    display: none;
+}
+
+.video-details-main .video-details .video-player:hover .controle{
+    display: unset;
+}
+
+/* ---------------------------------------------------------------- */
+
+.video-details-main .video-details .controle .seekbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details .controle .seekbar .seek{
+    width: 100%;
+    position: relative;
+}
+
+.video-details-main .video-details .controle .seekbar .seek input{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.video-details-main .video-details .controle .seekbar .seek h6{
+    width: 50%;
+    height: 6px;
+    background: red;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.video-details-main .video-details .controle .seekbar .seek h6::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+    right: 0;
+    top: -4px;
+    z-index: 99999;
+}
+
+.video-details-main .video-details .controle .seekbar .seek::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(184, 184, 184,.2);
+    top: 5px;
+    z-index: 99999;
+}
+
+.video-details-main .video-details .controle .seekbar .time{
+    width: 100px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 10px;
+    /* position: relative; */
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .left , .medium , .right{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .medium{
+    justify-content: center;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right{
+    justify-content: flex-end;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .left i{
+    position: relative;
+    margin-right: 10px;
+    height: 35px;
+    height: 35px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .left i span{
+    position: relative;
+    font-size: 10px;
+    top: -9px;
+    left: -22px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .medium h6{
+    font-size: 16px;
+}
+
+/* .video-details-main .video-details .video-player .controle .controller-box .right{
+    border: 2px solid red;
+} */
+
+.video-details-main .video-details .video-player .controle .controller-box .right i{
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next{
+    position: relative;margin-left: 30px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    bottom: 100%;
+    right: 0;
+    background: #181818;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -9999999;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep h1{
+    display: block;
+    background: #8a8a8a;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card{
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .img-play{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .img-play img{
+    width: 200px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .img-play i{
+    position: absolute;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px 7px;
+    font-size: 20px;
+    background: rgb(184, 184, 184,.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card:hover .img-play i{
+    opacity: 1;
+} 
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .content{
+    padding: 0px 10px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .content h1{
+    background: unset;
+    padding: unset;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next .ep .card .content p{
+    font-size: 13px;
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .next:hover .ep{
+    opacity: 1;
+    z-index: +99999;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer{
+    position: relative;
+    margin-right: 30px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep{
+    position: absolute;
+    width: 600px;
+    height: 280px;
+    bottom: 110%;
+    background: #181818;
+    right: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    overflow-y: auto;
+    transition: .3s linear;
+    opacity: 0;
+    z-index: -999999;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer:hover .show-ep{
+    opacity: 1;
+    z-index: 999999;
+}
+
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card{
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .head{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .head h6{
+    width: 70px;
+    height: 3px;
+    background: rgb(184, 184, 184,.03);
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .bx{
+    margin-top: 15px;
+    display: flex;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .bx .img-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .bx .img-play img{
+    width: 200px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .bx .img-play i{
+    position: absolute;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px 7px;
+    font-size: 20px;
+    background: rgb(184, 184, 184,.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s linear;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card:hover .bx .img-play i{
+    opacity: 1;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .layer .show-ep .card .bx .content{
+    padding: 0px 10px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .audio-subtitle {
+    position: relative;
+    margin-right: 30px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .audio-subtitle .bx{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    bottom: 120%;
+    right: 0; 
+    background: #181819;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+    transition: .3s linear;
+    opacity: 0;
+    z-index: -999999;  
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .audio-subtitle:hover .bx{
+    opacity: 1;
+    z-index: 999999;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .audio-subtitle .bx .left-bx , .right-bx{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .audio-subtitle .bx .list{
+    margin-top: 10px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .audio-subtitle .bx .list li{
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 3px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .right .audio-subtitle .bx .list li:hover{
+    color: #8a8a8a;    
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed{
+    position: relative;
+    margin-right: 30px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed .bx{
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    background: #181818;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -99999999;
+    opacity: 0;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed:hover .bx{
+    z-index: 99999999;
+    opacity: 1;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed .bx .card{
+    border: 2px solid blue;
+    width: 95px;
+    height: 2px;
+    position: relative;
+    background: white;
+    border: 1px solid #fff;
+    text-align: center;
+    top: -5px;
+    cursor: pointer;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed .bx .card::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    left: 45%;
+    top: -4px;
+    transition: .3s linear;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed .bx .card span{
+    position: relative;
+    top: 10px;
+}
+
+.video-details-main .video-details .video-player .controle .controller-box .video-speed .bx .card:hover::before{
+    transform: scale(2);
+}
+
+.video-details-main .video-details .video-player .bi-fullscreen{
+    cursor: pointer;
+}
+
